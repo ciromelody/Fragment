@@ -2,7 +2,7 @@ package org.ciromelody.fragment.ui.main;
 
 import android.content.Context;
 
-import org.ciromelody.fragment.BlankFragment;
+import org.ciromelody.fragment.FragmentA;
 import org.ciromelody.fragment.R;
 
 import androidx.annotation.Nullable;
@@ -31,9 +31,9 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         // getItem is called to instantiate the fragment for the given page.
         // Return a PlaceholderFragment (defined as a static inner class below).
         if (position==1){
-            return BlankFragment.newInstance("dato 1","dato 2");
+            return FragmentA.newInstance("dato 1","dato 2");
         }else {
-        return PlaceholderFragment.newInstance(position + 1);}
+        return FragmentB.newInstance(position + 1);}
     }
 
     @Nullable

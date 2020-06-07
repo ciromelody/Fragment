@@ -18,14 +18,14 @@ import androidx.fragment.app.Fragment;
 /**
  * A placeholder fragment containing a simple view.
  */
-public class PlaceholderFragment extends Fragment {
+public class FragmentB extends Fragment {
 
     private static final String ARG_SECTION_NUMBER = "section_number";
     View root;
     int index = 8;
     TextView textView;
-    public static PlaceholderFragment newInstance(int index) {
-        PlaceholderFragment fragment = new PlaceholderFragment();
+    public static FragmentB newInstance(int index) {
+        FragmentB fragment = new FragmentB();
         Bundle bundle = new Bundle();
         bundle.putInt(ARG_SECTION_NUMBER, index);
         fragment.setArguments(bundle);
